@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <title>Home</title>
+  <style>
+    /* Default styles */
+    body {
+      font-family: sans-serif;
+    }
+    h1{
+        justify-content: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      margin: 0 auto;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    label, input {
+      margin: 5px 0;
+      width: 100%;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    input[type="text"] {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Responsive styles for screens smaller than 500px */
+    @media (max-width: 500px) {
+      form {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Search Form</h1>
+  <form method="POST">
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title" placeholder="eg.Benefits of exercise"><br>
+    <label for="keyword">Keyword:</label><br>
+    <input type="text" id="keyword" name="keyword" placeholder="eg.Exercise"><br><br>
+    <input type="submit" value="Submit">
+    
+      </form> 
+    </body>
+    </html>
