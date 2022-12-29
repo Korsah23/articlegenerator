@@ -1,6 +1,6 @@
 from flask import Flask, render_template,request
 import openai
-openai.api_key = "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"
+openai.api_key = ""
 import requests,os
 
 
@@ -74,7 +74,7 @@ def generate_photos(keyword):
 
     # Set the authorization headers
     headers = {
-    'Authorization': 'Bearer 563492ad6f91700001000001b0f216a1d8904366a249d46acf112cd5',
+    'Authorization': 'Bearer ',
     'Content-Type': 'application/json'
     }
     # Set the API endpoint URL
@@ -116,7 +116,7 @@ def generate_video(title):
   'part': 'snippet',
   'q': f'{title}',
   'type': 'video',
-  'key': 'AIzaSyB-RJgEYkn5lzsDzovPDADPtC_Wmz6dllA'
+  'key': ''
     }
 
     # Send the GET request
